@@ -46,7 +46,7 @@ export default function CreateNewsPage() {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block font-bengali font-semibold mb-2 text-gray-700 dark:text-gray-300">শিরোনাম *</n+          </label>
+          <label className="block font-bengali font-semibold mb-2 text-gray-700 dark:text-gray-300">শিরোনাম *</label>
           <input type="text" name="title" value={formData.title} onChange={handleChange} required className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent font-bengali dark:bg-gray-800 dark:text-white" />
         </div>
 
