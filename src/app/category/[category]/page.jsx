@@ -17,14 +17,14 @@ export default function CategoryPage() {
   const { news, loading, currentPage, totalPages } = useAppSelector((state) => state.news);
 
   const categoryMap = {
-    national: "জাতীয়",
-    international: "আন্তর্জাতিক",
-    sports: "খেলাধুলা",
-    entertainment: "বিনোদন",
-    technology: "প্রযুক্তি",
-    health: "স্বাস্থ্য",
-    business: "বাণিজ্য",
-    culture: "সংস্কৃতি",
+    national: "National",
+    international: "International",
+    sports: "Sports",
+    entertainment: "Entertainment",
+    technology: "Technology",
+    health: "Health",
+    business: "Business",
+    culture: "Culture",
   };
 
   const categoryName = categoryMap[category] || category;

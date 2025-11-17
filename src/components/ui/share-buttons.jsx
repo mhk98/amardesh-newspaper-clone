@@ -26,7 +26,7 @@ export function ShareButtons({ title, slug }) {
 
   return (
     <div className="flex items-center gap-3 mt-6">
-      <span className="font-bengali text-sm text-gray-600 dark:text-gray-400">শেয়ার করুন:</span>
+      <span className="font-bengali text-sm text-gray-600 dark:text-gray-400">Share:</span>
       <Button variant="outline" size="sm" onClick={shareOnFacebook} className="flex items-center gap-2">
         <Facebook className="h-4 w-4" />
         <span className="font-bengali">Facebook</span>

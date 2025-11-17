@@ -44,7 +44,7 @@ export default function HomePage() {
       <BreakingNewsTicker news={breakingNews} />
       <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8" data-aos="fade-up">
         <section className="lg:col-span-8">
-          <h2 className="font-bengali text-2xl font-bold mb-4 text-gray-900 dark:text-white">সর্বশেষ</h2>
+          <h2 className="font-bengali text-2xl font-bold mb-4 text-gray-900 dark:text-white">Latest</h2>
           {loading ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[...Array(6)].map((_, i) => (
@@ -60,7 +60,7 @@ export default function HomePage() {
                     className="font-bengali bg-primary text-white px-5 py-2 rounded hover:bg-primary/90"
                     onClick={() => handlePageChange(currentPage + 1)}
                   >
-                    আরও দেখুন
+                    See More
                   </button>
                 </div>
               )}

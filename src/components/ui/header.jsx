@@ -8,14 +8,14 @@ import { DarkModeToggle } from "./dark-mode-toggle";
 import { motion, AnimatePresence } from "framer-motion";
 
 const categories = [
-  { name: "জাতীয়", slug: "national" },
-  { name: "আন্তর্জাতিক", slug: "international" },
-  { name: "খেলাধুলা", slug: "sports" },
-  { name: "বিনোদন", slug: "entertainment" },
-  { name: "প্রযুক্তি", slug: "technology" },
-  { name: "স্বাস্থ্য", slug: "health" },
-  { name: "বাণিজ্য", slug: "business" },
-  { name: "সংস্কৃতি", slug: "culture" },
+  { name: "National", slug: "national" },
+  { name: "International", slug: "international" },
+  { name: "Sports", slug: "sports" },
+  { name: "Entertainment", slug: "entertainment" },
+  { name: "Technology", slug: "technology" },
+  { name: "Health", slug: "health" },
+  { name: "Business", slug: "business" },
+  { name: "Culture", slug: "culture" },
 ];
 
 export function Header() {
@@ -30,22 +30,12 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <h1 className="font-bengali text-2xl lg:text-3xl font-bold text-primary">
-              আমার দেশ
+              Egypt Today
             </h1>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
-            <Link
-              href="/"
-              className={`font-bengali font-medium transition-colors ${
-                pathname === "/"
-                  ? "text-primary border-b-2 border-primary"
-                  : "text-gray-700 dark:text-gray-300 hover:text-primary"
-              }`}
-            >
-              প্রথম পাতা
-            </Link>
             {categories.map((category) => (
               <div
                 key={category.slug}
@@ -62,9 +52,9 @@ export function Header() {
                   }`}
                 >
                   {category.name}
-                  <ChevronDown className="h-4 w-4" />
+                  {/* <ChevronDown className="h-4 w-4" /> */}
                 </Link>
-                <AnimatePresence>
+                {/* <AnimatePresence>
                   {activeDropdown === category.slug && (
                     <motion.div
                       initial={{ opacity: 0, y: -10 }}
@@ -80,7 +70,7 @@ export function Header() {
                       </Link>
                     </motion.div>
                   )}
-                </AnimatePresence>
+                </AnimatePresence> */}
               </div>
             ))}
           </nav>

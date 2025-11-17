@@ -10,7 +10,7 @@ export function BreakingNewsTicker({ news }) {
     <div className="bg-red-600 text-white py-2 overflow-hidden relative">
       <div className="flex items-center gap-4">
         <span className="bg-white text-red-600 px-4 py-1 font-bold whitespace-nowrap">
-          ব্রেকিং নিউজ
+          Breaking News
         </span>
         <div className="flex-1 overflow-hidden">
           <motion.div

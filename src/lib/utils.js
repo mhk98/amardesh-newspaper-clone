@@ -11,18 +11,18 @@ export function formatDate(date) {
   const diffInSeconds = Math.floor((now.getTime() - d.getTime()) / 1000);
 
   if (diffInSeconds < 60) {
-    return `${diffInSeconds} সেকেন্ড আগে`;
+    return `${diffInSeconds} seconds ago`;
   } else if (diffInSeconds < 3600) {
     const minutes = Math.floor(diffInSeconds / 60);
-    return `${minutes} মিনিট আগে`;
+    return `${minutes} minutes ago`;
   } else if (diffInSeconds < 86400) {
     const hours = Math.floor(diffInSeconds / 3600);
-    return `${hours} ঘন্টা আগে`;
+    return `${hours} hours ago`;
   } else if (diffInSeconds < 2592000) {
     const days = Math.floor(diffInSeconds / 86400);
-    return `${days} দিন আগে`;
+    return `${days} days ago`;
   } else {
-    return d.toLocaleDateString("bn-BD", {
+    return d.toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
       day: "numeric",
@@ -32,14 +32,14 @@ export function formatDate(date) {
 
 export function getCategorySlug(categoryName) {
   const categoryMap = {
-    "জাতীয়": "national",
-    "আন্তর্জাতিক": "international",
-    "খেলাধুলা": "sports",
-    "বিনোদন": "entertainment",
-    "প্রযুক্তি": "technology",
-    "স্বাস্থ্য": "health",
-    "বাণিজ্য": "business",
-    "সংস্কৃতি": "culture",
+    National: "national",
+    International: "international",
+    Sports: "sports",
+    Entertainment: "entertainment",
+    Technology: "technology",
+    Health: "health",
+    Business: "business",
+    Culture: "culture",
   };
   return categoryMap[categoryName] || categoryName.toLowerCase();
 }
@@ -56,16 +56,40 @@ export function generateSlug(title) {
 export const DEFAULT_NEWS_IMAGE =
   "https://source.unsplash.com/1200x800/?news,bangladesh";
 
-// Bengali numerals helpers
-const bnDigitsMap = { "0":"০","1":"১","2":"২","3":"৩","4":"৪","5":"৫","6":"৬","7":"৭","8":"৮","9":"৯" };
+// English numerals helpers are not needed — keeping mapping as-is if required
+const bnDigitsMap = {
+  0: "0",
+  1: "1",
+  2: "2",
+  3: "3",
+  4: "4",
+  5: "5",
+  6: "6",
+  7: "7",
+  8: "8",
+  9: "9",
+};
 export function toBnDigits(input) {
-  return String(input).replace(/[0-9]/g, d => bnDigitsMap[d]);
+  return String(input).replace(/[0-9]/g, (d) => bnDigitsMap[d]);
 }
 
-export const bnWeekdays = ["রবি", "সোম", "মঙ্গল", "বুধ", "বৃহ", "শুক্র", "শনি"];
+// Weekdays in English
+export const bnWeekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+// Months in English
 export const bnMonths = [
-  "জানুয়ারি","ফেব্রুয়ারি","মার্চ","এপ্রিল","মে","জুন",
-  "জুলাই","আগস্ট","সেপ্টেম্বর","অক্টোবর","নভেম্বর","ডিসেম্বর"
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 export function getCalendarMatrix(year, monthIndex) {
@@ -97,5 +121,3 @@ export function getCalendarMatrix(year, monthIndex) {
   }
   return weeks;
 }
-
-

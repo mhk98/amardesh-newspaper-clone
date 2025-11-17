@@ -78,7 +78,7 @@ export function SidebarWidgets() {
     <aside className="space-y-6">
       <Calendar />
       <div className="border rounded-lg p-4 bg-white dark:bg-gray-800">
-        <h3 className="font-bengali font-bold mb-3">সামাজিক মাধ্যম</h3>
+        <h3 className="font-bengali font-bold mb-3">Social Media</h3>
         <div className="flex gap-3 text-sm text-gray-600 dark:text-gray-300">
           <a href="#" className="hover:text-primary">Facebook</a>
           <a href="#" className="hover:text-primary">Twitter</a>

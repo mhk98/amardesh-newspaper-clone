@@ -12,21 +12,24 @@ export async function GET(request) {
 
   if (category) {
     const categoryMap = {
-      national: "জাতীয়",
-      international: "আন্তর্জাতিক",
-      sports: "খেলাধুলা",
-      entertainment: "বিনোদন",
-      technology: "প্রযুক্তি",
-      health: "স্বাস্থ্য",
-      business: "বাণিজ্য",
-      culture: "সংস্কৃতি",
+      national: "national",
+      international: "international",
+      sports: "sports",
+      entertainment: "entertainment",
+      technology: "technology",
+      health: "health",
+      business: "business",
+      culture: "culture",
     };
     const categoryName = categoryMap[category] || category;
-    filteredNews = filteredNews.filter((item) => item.category === categoryName);
+    filteredNews = filteredNews.filter(
+      (item) => item.category === categoryName
+    );
   }
 
   filteredNews.sort(
-    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+    (a, b) =>
+      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 
   const totalPages = Math.ceil(filteredNews.length / ITEMS_PER_PAGE);
@@ -34,7 +37,8 @@ export async function GET(request) {
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const paginatedNews = filteredNews.slice(startIndex, endIndex);
 
-  const featuredNews = filteredNews.find((item) => item.isBreaking) || filteredNews[0];
+  const featuredNews =
+    filteredNews.find((item) => item.isBreaking) || filteredNews[0];
 
   return NextResponse.json({
     news: paginatedNews,
@@ -44,5 +48,3 @@ export async function GET(request) {
     totalItems: filteredNews.length,
   });
 }
-
-

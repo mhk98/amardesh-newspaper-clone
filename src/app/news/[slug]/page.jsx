@@ -49,7 +49,7 @@ export default function NewsDetailPage() {
   if (!news) {
     return (
       <div className="container mx-auto px-4 py-8 text-center">
-        <h1 className="font-bengali text-2xl font-bold text-gray-900 dark:text-white">খবরটি পাওয়া যায়নি</h1>
+        <h1 className="font-bengali text-2xl font-bold text-gray-900 dark:text-white">News not found</h1>
       </div>
     );
   }
@@ -61,7 +61,7 @@ export default function NewsDetailPage() {
           {/* Breadcrumb */}
           <nav className="mb-6">
             <ol className="flex items-center space-x-2 font-bengali text-sm text-gray-600 dark:text-gray-400">
-              <li><Link href="/" className="hover:text-primary">প্রথম পাতা</Link></li>
+              <li><Link href="/" className="hover:text-primary">Home</Link></li>
               <li>/</li>
               <li><Link href={`/category/${getCategorySlug(news.category)}`} className="hover:text-primary">{news.category}</Link></li>
               <li>/</li>
@@ -81,7 +81,7 @@ export default function NewsDetailPage() {
 
           {/* Meta Info */}
           <div className="flex items-center gap-4 mb-6 text-sm text-gray-600 dark:text-gray-400">
-            <span className="font-bengali">লেখক: {news.author}</span>
+            <span className="font-bengali">Writer: {news.author}</span>
             <span>•</span>
             <time className="font-bengali">{formatDate(news.publishedAt)}</time>
           </div>
@@ -105,7 +105,7 @@ export default function NewsDetailPage() {
         {/* Related News */}
         {relatedNews.length > 0 && (
           <section className="mt-16" data-aos="fade-up">
-            <h2 className="font-bengali text-2xl font-bold mb-6 text-gray-900 dark:text-white">সম্পর্কিত খবর</h2>
+            <h2 className="font-bengali text-2xl font-bold mb-6 text-gray-900 dark:text-white">Related News</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {relatedNews.map((item) => (
                 <NewsCard key={item.id} news={item} />

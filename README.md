@@ -13,21 +13,22 @@ A fully responsive Bengali news website built with Next.js 14 App Router, Tailwi
 ✅ Pagination for news list  
 ✅ Category pages (International, Sports, Entertainment, Technology, etc.)  
 ✅ Single News Page with:
-   - Title, Author, Published Time
-   - Share Buttons (FB, WhatsApp, Messenger)
-   - Suggested/Related articles section  
-✅ SEO Best Practices:
-   - Dynamic Open Graph & Meta Tags
-   - Slug-based URLs e.g. /news/something-unique  
-✅ API Ready Structure:
-   - news list (latest)
-   - single news by id/slug  
-✅ Dark Mode Support  
-✅ Local Bengali font (Noto Sans Bengali / SolaimanLipi)  
-✅ Admin Panel Ready Codebase (CRUD news)  
-✅ Clean and reusable UI components  
-✅ Smooth animations (AOS / Framer Motion)  
-✅ Light skeleton loading animation for images  
+
+- Title, Author, Published Time
+- Share Buttons (FB, WhatsApp, Messenger)
+- Suggested/Related articles section  
+  ✅ SEO Best Practices:
+- Dynamic Open Graph & Meta Tags
+- Slug-based URLs e.g. /news/something-unique  
+  ✅ API Ready Structure:
+- news list (latest)
+- single news by id/slug  
+  ✅ Dark Mode Support  
+  ✅ Local Bengali font (Noto Sans Bengali / SolaimanLipi)  
+  ✅ Admin Panel Ready Codebase (CRUD news)  
+  ✅ Clean and reusable UI components  
+  ✅ Smooth animations (AOS / Framer Motion)  
+  ✅ Light skeleton loading animation for images
 
 ## Tech Stack
 
@@ -89,7 +90,7 @@ src/
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn or pnpm
 
 ### Installation
@@ -107,6 +108,7 @@ pnpm install
 2. **Add Bengali Font (Optional):**
 
 If you want to use SolaimanLipi font, download it and place it in:
+
 ```
 src/fonts/SolaimanLipi.ttf
 ```
@@ -140,10 +142,12 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 ### GET /api/news
 
 Query parameters:
+
 - `page` (optional): Page number (default: 1)
 - `category` (optional): Filter by category slug
 
 Response:
+
 ```json
 {
   "news": [...],
@@ -157,6 +161,7 @@ Response:
 ### GET /api/news/[slug]
 
 Response:
+
 ```json
 {
   "news": {...},
@@ -172,7 +177,7 @@ Edit `src/components/ui/header.tsx` to add/modify categories:
 
 ```typescript
 const categories = [
-  { name: "জাতীয়", slug: "national" },
+  { name: "National", slug: "national" },
   // Add more categories here
 ];
 ```
@@ -236,4 +241,3 @@ This project is open source and available for your use.
 ## Support
 
 For issues or questions, please open an issue on the repository.
-
