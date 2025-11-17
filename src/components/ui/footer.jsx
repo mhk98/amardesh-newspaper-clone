@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-bengali text-xl font-bold mb-4">Egypt Today</h3>
+            <h3 className="font-bengali text-xl font-bold mb-4">GIZA NEWS  24 online</h3>
             <p className="font-bengali text-gray-400 text-sm">Your Trusted News Paper</p>
           </div>
           <div>
@@ -35,7 +35,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center font-bengali text-sm text-gray-400">
-          <p>© 2024 Egypt Today। All rights reserved.</p>
+          <p>© 2024 GIZA NEWS  24 online। All rights reserved.</p>
         </div>
       </div>
     </footer>

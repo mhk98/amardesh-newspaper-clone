@@ -7,7 +7,7 @@ import { Footer } from "@/components/ui/footer";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Egypt Today -  GIZA NEWS  24 online",
+  title: "GIZA NEWS  24 online",
   description:
     "Latest news from Egypt including national, international, sports, entertainment and more.",
   keywords: "Egypt, news, latest news, national, international",

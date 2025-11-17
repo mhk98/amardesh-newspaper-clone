@@ -7,11 +7,11 @@ export async function generateMetadata({ params }) {
   const news = newsData.find((item) => item.slug === slug);
 
   if (!news) {
-    return { title: "Egypt Today - Your Trusted News Paper" };
+    return { title: "GIZA NEWS  24 online - Your Trusted News Paper" };
   }
 
   return {
-    title: `${news.title} | Egypt Today`,
+    title: `${news.title} | GIZA NEWS  24 online`,
     description: news.excerpt || news.content.substring(0, 160),
     openGraph: {
       title: news.title,

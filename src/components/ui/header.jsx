@@ -30,7 +30,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <h1 className="font-bengali text-2xl lg:text-3xl font-bold text-primary">
-              Egypt Today
+              GIZA NEWS  24 online
             </h1>
           </Link>
 
