@@ -98,7 +98,7 @@
 },
 {
   "id": 9,
-  "title": "Four International Golf Tournaments to Launch in Egypt Next Year",
+  "title": "International Golf Tournaments in Egypt",
   "slug": "four-international-golf-tournaments-launch-egypt",
   "author": "Riyad Karim",
   "publishedAt": "2025-08-11T10:00:00Z",
@@ -133,30 +133,20 @@
   "excerpt": "Under the Smart City Project, development work in Dhaka is accelerating through the use of new technologies.",
   "isBreaking": false
 },
+
 {
-  "id": 12,
-  "title": "New Steps to Improve International Relations",
-  "slug": "new-steps-international-relations",
-  "author": "Tahmida Rahman",
-  "publishedAt": "2025-11-13T18:15:00Z",
-  "category": "international",
-  "image": "http://www.egypttoday.com/siteimages/Larg/202510300624302430.jpg",
-  "content": "Bangladesh has taken new steps to strengthen bilateral relations with various countries. This initiative will help improve trade and diplomatic relations.",
-  "excerpt": "Bangladesh has taken new steps to strengthen bilateral relations with various countries.",
-  "isBreaking": false
-},
-{
-    "id": 13,
+    "id": 12,
     "title": "Relatives of Mohamed Saber Ramadan Nasr Deif Allah",
-    "slug": "world-leaders-climate-change-summit",
-     "author": "Imran Hossain",
+    "slug": "Relatives of Mohamed Saber Ramadan Nasr Deif Allah",
+     "author": "Abdullah Saeed",
     "publishedAt": "2021-07-07T18:00:00Z",
-    "category": "national",
+    "category": "international",
     "image": "https://i.ibb.co.com/3YQ0VL3t/national-news.jpg",
     "content": "Relatives of Mohamed Saber Ramadan Nasr Deif Allah A.K.A Muhammad Saber Ramadan Nasr A.K.A. Mohammad Ahmed (45), commander of the Al-Furkan militant group, have held a protest in Giza on the anniversary of his death. He was executed in 2020. His family says he was killed without any evidence. He has been held on custody since 2016, along with thousands of others, as a militant commander. his Case No. 631 of 2019 State Security.",
-    "excerpt": "The highly anticipated Quran recitation competition Dawlet El Telawa launched its debut episode this Friday with a powerful start.",
+    "excerpt": "Relatives of Mohamed Saber Ramadan Nasr Deif Allah A.K.A Muhammad Saber Ramadan Nasr A.K.A. Mohammad Ahmed (45), commander of the Al-Furkan militant group, have held a protest in Giza on the anniversary of his death. He was executed in 2020. His family says he was killed without any evidence. He has been held on custody since 2016, along with thousands of others, as a militant commander. his Case No. 631 of 2019 State Security.",
     "isBreaking": false
   }
+
 
 ]
 

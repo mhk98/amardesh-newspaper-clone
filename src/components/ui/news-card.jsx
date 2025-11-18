@@ -24,11 +24,17 @@ export function NewsCard({ news, featured = false, variant = "default" }) {
               className="object-cover group-hover:scale-110 transition-transform duration-300"
               sizes={featured ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 100vw, 33vw"}
             />
-            <div className="absolute top-4 left-4">
+            {/* <div className="absolute top-4 left-4">
               <span className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
                 {news.category}
               </span>
-            </div>
+            </div> */}
+            <div className="absolute top-4 left-4">
+  <span className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+    {news.category.charAt(0).toUpperCase() + news.category.slice(1)}
+  </span>
+</div>
+
           </div>
           <div className="p-4 lg:p-6">
             <h2 className={`font-bengali font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors ${

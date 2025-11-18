@@ -16,6 +16,8 @@ export default function CategoryPage() {
   const dispatch = useAppDispatch();
   const { news, loading, currentPage, totalPages } = useAppSelector((state) => state.news);
 
+  console.log("Category Page Rendered with category:", category);
+
   const categoryMap = {
     national: "National",
     international: "International",

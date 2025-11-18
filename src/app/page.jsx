@@ -31,7 +31,9 @@ export default function HomePage() {
     }
     setBreakingNews(allNews.filter((item) => item.isBreaking));
     setList(news);
+
   }, [news, featuredNews]);
+
 
   const handlePageChange = (page) => {
     dispatch(setCurrentPage(page));
