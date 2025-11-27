@@ -10,6 +10,7 @@ const nextConfig = {
       "cdn.pixabay.com",
       "www.egypttoday.com",
       "i.ibb.co.com",
+      "web.whatsapp.com",
     ],
     remotePatterns: [
       { protocol: "https", hostname: "via.placeholder.com" },
@@ -19,6 +20,7 @@ const nextConfig = {
       { protocol: "https", hostname: "cdn.pixabay.com" },
       { protocol: "https", hostname: "www.egypttoday.com" },
       { protocol: "https", hostname: "i.ibb.co" },
+      { protocol: "https", hostname: "web.whatsapp.com" },
     ],
   },
 };
